@@ -29,8 +29,8 @@ ns = 1000000000
 rsb = 150000000000
 #Average rate of star death per year:
 vrsd = 10000
-#Multiply by how much bigger the actual universe is than the observable universe:
-mw = 100000000000000
+#How many times bigger the actual universe is than the observable universe:
+mw = 1
 #Fraction of galaxies in goldilocks zone of universe:
 fig = 1
 #Fraction of stars in a goldilocks zone of their galaxy (or otherwise situated to support life):
@@ -54,9 +54,9 @@ fc = .001
 #Number of years they will transmit (things to consider: extinction, funding cuts):
 nyc = 10
 #How many years it will take us to develop a technology that can detect a universal signal:
-vnyt = 100
+vnyt = 60
 #How many years human civilization will last:
-nyd = 50
+nyd = 200
 #How many more years you expect to live:
 vnyy = 50
 
@@ -85,4 +85,3 @@ elif Ny>1 and x<0:
   print("Will you be around to see it?: You'll be lucky to find a dead rat to eat.")
 elif Ny<1:
   print ("Will you be around to see it?: No.")
-
