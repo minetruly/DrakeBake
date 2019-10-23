@@ -1,0 +1,81 @@
+# -*- coding: utf-8 -*-
+"""
+Drake Bake Beta v1.0
+
+The Drake Equation merely looks at things on a galactic scale. It's time to think big.
+
+Created on Tue Oct 22 18:21:27 2019
+
+@author: LJ
+"""
+#How many alien civilizations in the entire universe have developed a technology that can communicate with anyone in the universe who is capable of detecting it? And what are the chances we'll pick it up?
+
+#Change the variables to try different estimates.
+
+#If the variable begins with the letter f, enter a number between 0 and 1, or 0 or 1.
+
+#The goldilocks zone is the area where conditions are right for life. Stars must be close enough together for new stars to gain heavy metals from the deaths of other stars, but not so close that the radiation and gravitational disturbances from the other stars destabilizes life. You can set goldilocks values to 1 if you want to allow for life beyond life as we know it.
+
+#Work in progress, share suggestions.
+
+#!!!Can I run it right this second? = YES
+
+
+#Number of galaxies in the universe:
+ng = 2000000000000
+#Average number of stars per galaxy:
+ns = 1000000000
+#Average rate of star formation per year:
+rsb = 150000000000
+#Average rate of star death per year:
+vrsd = 1000000000
+#Multiply by how much bigger the actual universe is than the observable universe:
+mw = 100000000000
+#Fraction of galaxies in goldilocks zone of universe:
+fig = 1
+#Fraction of stars in a goldilocks zone of their galaxy (or otherwise situated to support life):
+fis = .3
+#Fraction of stars with planets:
+fsp = .8
+#Number of planets per star:
+np = 10
+#Fraction of planets in the goldilocks zone of their star (enter 1 if you're not limiting life to goldilocks zone):
+fip = .1
+#Fraction of planets in the goldilocks zone that are capable of supporting life (or fraction of planets capable of supporting life, ignoring the goldilocks zone):
+fipp = .001
+#Fraction of inhabitable planets that actually develop life:
+fl = .01
+#Fraction of planets with life that develop intelligence:
+fi = .00001
+#Fraction of intelligent life that develops technology capable of transmitting a universal signal
+fat = .0000001
+#Fraction that decides they want broadcast a signal that's receivable by someone like us:
+fc = .1
+#Number of years they will transmit (things to consider: extinction, funding cuts):
+nyc = 10000
+#How many years it will take us to develop a technology that can detect a universal signal:
+nyt = 60
+#How many years human civilization will last:
+nyd = 200
+#How many more years you expect to live:
+vnyy = 50
+
+vrsdv = 1/vrsd
+vnyyv = nyd-nyd+vnyy
+
+#Number of alien civilizations sending a signal:
+N = (ng*ns*rsb*vrsdv*mw*fig*fis*fsp*np*fip*fipp*fl*fi*fat*fc)
+#Chances humankind will detect it:
+Ne = (N*nyc*nyt*nyd)
+#Will you be around to see it?
+Ny = (Ne*vnyyv)
+
+print(" ")
+print(" ")
+print("Number of alien civilizations transmitting a universal signal: " + str(N))
+print("Chances humankind will detect this signal: " + str(Ne))
+if Ny>0:
+  print("Will you be around to see it?: Yes.")
+if Ny<0:
+  print ("Will you be around to see it?: No.")
+
