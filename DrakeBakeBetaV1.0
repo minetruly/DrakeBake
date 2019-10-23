@@ -10,7 +10,7 @@ Created on Tue Oct 22 18:21:27 2019
 """
 #How many alien civilizations in the entire universe have developed a technology that can communicate with anyone in the universe who is capable of detecting it? And what are the chances we'll pick it up?
 
-#Change the variables to try different estimates.
+#Change the values to try different estimates.
 
 #If the variable begins with the letter f, enter a number between 0 and 1, or 0 or 1.
 
